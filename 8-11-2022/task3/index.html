@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <form action="">
+      <select name="" id="family-select" onchange="fontFamilyChange()">
+        <option value="arial">Arial</option>
+        <option value="cursive">Cursive</option>
+        <option value="serif">Serif</option>
+      </select>
+      <select name="" id="font-size-select" onchange="fontSizeChange()">
+        <option value="12">12pt</option>
+        <option value="24">24pt</option>
+        <option value="36">36pt</option>
+      </select>
+      <label for="italic-input">Italic</label>
+      <input
+        type="checkbox"
+        name="italic-input"
+        id="italic-input"
+        onchange="italicFun()"
+      />
+      <label for="italic-input">Bold</label>
+      <input
+        type="checkbox"
+        name="bold-input"
+        id="bold-input"
+        onchange="boldFun()"
+      />
+      <label for="italic-input">Underline</label>
+      <input
+        type="checkbox"
+        name="underline-input"
+        id="underline-input"
+        onchange="underlineFun()"
+      />
+      <br />
+      <textarea
+        name="textarea-p"
+        id="textarea-p"
+        cols="30"
+        rows="10"
+        style="font-family: sans-serif"
+      >
+The quick brown fox jumps over the lazy dog</textarea
+      >
+    </form>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
