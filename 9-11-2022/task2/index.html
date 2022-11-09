@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #submit{
+            margin-bottom: 50px;
+        }
+        label{
+            display: inline-block;
+            width: 200px;
+            height: 25px;
+        }
+        .inline{
+            display: inline;
+
+        }
+        #submit{
+            margin-top: 25px;
+        }
+        #card{
+            border: 1px solid black;
+            width: 400px;
+            padding: 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject"><br>
+        
+
+        <label for="textareaD">Description</label>
+        <textarea name="textareaD" id="textareaD" cols="30" rows="10"></textarea><br>
+        
+
+
+        <label for="">User Typed</label>
+        <label for="admin" class="inline">Admin</label>
+        <input type="checkbox" id="admin" value="admin ">
+        <label for="visitor" class="inline">visitor</label>
+        <input type="checkbox" id="visitor" value="visitor ">
+        <label for="loged" class="inline">logedInUser</label>
+        <input type="checkbox" id="loged" value="Loged In User "><br>
+
+
+        <label for="">Technology Used</label>
+        <label for="html" class="inline">Html</label>
+        <input type="checkbox" id="html" value="html ">
+        <label for="css" class="inline">CSS</label>
+        <input type="checkbox" id="css" value="css ">
+        <label for="js" class="inline">JavaScript</label>
+        <input type="checkbox" id="js" value="javaScript "><br>
+        
+
+        
+
+    </form>
+    <input type="submit" id="submit" onclick="formSave()">
+    <div id="card">
+        <label for="">subjedt:</label>
+        <span id="subjectAfter"></span><br>
+       
+       
+        <label for="">Description:</label>
+        <span id="descriptionAfter"></span><br>
+        
+        <label for="">User Typed:</label>
+        <span id="userAfter"></span><br>
+        
+        <label for="">Technology Used:</label>
+        <span id="technologyAfter"></span>
+        
+        
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

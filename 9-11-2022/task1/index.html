@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #submit{
+            margin-bottom: 50px;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            height: 25px;
+        }
+        .inline{
+            display: inline;
+
+        }
+        #submit{
+            margin-top: 25px;
+        }
+        #card{
+            border: 1px solid black;
+            width: 400px;
+            padding: 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age"><br>
+        <label for="gender">Gender</label> 
+      
+      
+        <label for="mail" class="inline">mail</label>
+        <input name="genderRadio" type="radio" id="mail" value="mail">
+        <label for="femail" class="inline">femail</label>
+        <input name="genderRadio" type="radio" id="femail" value="femail"><br>
+
+
+
+        <label for="textareaD">Description</label>
+        <textarea name="textareaD" id="textareaD" cols="30" rows="10"></textarea><br>
+        <label for="major">Major</label>
+        <input type="text" id="major"><br>
+
+
+        <label for="">Preferd languges</label>
+        <label for="html" class="inline">Html</label>
+        <input type="checkbox" id="html" value="html ">
+        <label for="css" class="inline">CSS</label>
+        <input type="checkbox" id="css" value="css ">
+        <label for="js" class="inline">JavaScript</label>
+        <input type="checkbox" id="js" value="javaScript "><br>
+        
+
+    </form>
+    <input type="submit" id="submit" onclick="formSave()">
+
+
+    <div id="card">
+        <label for="">Name:</label>
+        <span id="nameAfter"></span><br>
+        <label for="">Age:</label>
+        <span id="ageAfter"></span><br>
+        <label for="">Gender:</label>
+        <span id="genderAfter"></span><br>
+        <label for="">Description:</label>
+        <span id="descriptionAfter"></span><br>
+        <label for="">Major:</label>
+        <span id="majorAfter"></span><br>
+        <label for="">Preferd languges:</label>
+        <span id="preferdAfter"></span>
+        
+        
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
