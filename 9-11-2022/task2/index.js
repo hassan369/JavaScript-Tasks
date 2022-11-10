@@ -1,3 +1,19 @@
+
+if(sessionStorage.getItem('subjectObj')){
+    let subjectFromStorage = JSON.parse(sessionStorage.getItem('subjectObj')) ;
+    
+    document.getElementById('card').style.display = "block";
+
+    document.getElementById('subjectAfter').innerHTML = subjectFromStorage.subject;
+    document.getElementById('descriptionAfter').innerHTML = subjectFromStorage.description;
+    document.getElementById('userAfter').innerHTML = subjectFromStorage.user;
+    document.getElementById('technologyAfter').innerHTML = subjectFromStorage.technology;
+
+}
+
+
+
+
 function formSave(){
     
     
@@ -31,8 +47,8 @@ function formSave(){
 
     
 
-    localStorage.setItem('subjectObj',JSON.stringify(person));
-    let subjectFromStorage = JSON.parse(localStorage.getItem('subjectObj')) ;
+    sessionStorage.setItem('subjectObj',JSON.stringify(person));
+    let subjectFromStorage = JSON.parse(sessionStorage.getItem('subjectObj')) ;
     
     document.getElementById('card').style.display = "block";
 
